@@ -1,0 +1,2100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;800;900&display=swap');
+ 
+
+* {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-weight: 400;
+}
+  
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: rgb(73, 73, 73);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oranienbaum', serif;
+    font-weight: bold;
+}
+
+main {
+  max-width: 90%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Header */
+
+#bootstrap-overrides .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(123, 123, 123, 0.3);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+#bootstrap-overrides .navbar .nav-link {
+    font-weight: 900;
+}
+
+#bootstrap-overrides .navbar form {
+    margin-left: 10px;
+}
+
+#bootstrap-overrides .navbar form button {
+    color:rgb(255, 255, 255);
+    background-color: rgb(255, 83, 83);
+    border-color: rgb(255, 83, 83);
+    font-weight: 900;
+}
+
+#bootstrap-overrides .navbar form button:hover {
+    color:rgb(255, 83, 83);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 83, 83);
+    font-weight: 900;
+}
+
+#bootstrap-overrides .navbar .dropdown-menu {
+    padding: 0;
+    border: 1px solid rgb(234, 219, 219);
+}
+
+#bootstrap-overrides .navbar .dropdown-menu .dropdown-divider {
+    border-top: 1px solid rgb(234, 219, 219);
+}
+
+#bootstrap-overrides .navbar .dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    transition: 200ms;
+}
+
+#bootstrap-overrides .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: rgb(255, 233, 233);
+    transition: 200ms;
+    color: rgb(166, 0, 0);
+}
+
+#bootstrap-overrides .navbar .dropdown-menu .dropdown-divider {
+    margin: 0;
+}
+
+#bootstrap-overrides .navbar .navbar-toggler {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* Newsletter */
+main .newsletter {
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    background-color: rgb(196, 55, 55);
+}
+
+main .newsletter .newsletter-text {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+main .newsletter .newsletter-text h5 {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+main .newsletter .newsletter-text p {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+main .newsletter .newsletter-form {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+
+main .newsletter .newsletter-form .newsletter-join input {
+    font-size: 16px;
+    font-weight: 900;
+    border: 1px solid rgb(163, 37, 37);
+    font-family: 'Nunito', sans-serif;
+    color: rgb(75, 75, 75);
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 50%;
+    margin: 10px 15px 15px auto;
+}
+
+main .newsletter .newsletter-form .newsletter-join button {
+    background-color: rgb(255, 237, 237);
+    border: 1px solid rgb(255, 237, 237);
+    color: rgb(196, 55, 55);
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 15px auto 15px auto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    transition: 500ms;
+}
+
+main .newsletter .newsletter-form .newsletter-join button:hover {
+    opacity: 0.8;
+    transition: 500ms;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(214, 0, 0);
+}
+
+@media (max-width: 768px) {
+    main .newsletter .newsletter-form .newsletter-join input {
+        display: block;
+        margin: 10px auto 10px auto;
+        width: 80%;
+    }
+    
+    main .newsletter .newsletter-form .newsletter-join button {
+        display: block;
+        margin: 10px auto 10px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Main contents */
+main .contents {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0;
+
+}
+
+main .contents .main-contents {
+    order: 1;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Breadcrumbs */
+
+main .contents .main-contents .breads {
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+main .contents .main-contents .breads ul {
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: rgb(73, 73, 73);
+}
+  
+main .contents .main-contents .breads ul li {
+    display: inline;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: rgb(73, 73, 73);
+
+}
+  
+main .contents .main-contents .breads ul li+li:before {
+    padding: 8px;
+    color: rgb(73, 73, 73);
+    content: "/";
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+  
+main .contents .main-contents .breads ul li a {
+    color: rgb(212, 38, 38);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    transition: 300ms;
+}
+  
+main .contents .main-contents .breads ul li a:hover {
+    color: rgb(149, 21, 21);
+    transition: 300ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Top boxes */
+
+main .contents .main-contents article .top-boxes {
+    width: 100%;
+    margin: 10px auto 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+main .contents .main-contents article .top-boxes .compare {
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(222, 222, 222);
+    background-color: rgb(246, 246, 246);
+}
+
+main .contents .main-contents article .top-boxes .compare strong {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+main .contents .main-contents article .top-boxes .compare p {
+    width: 100%;
+    margin: 5px auto 5px auto;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(73, 73, 73);
+}
+
+main .contents .main-contents article .top-boxes .compare a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: rgb(224, 0, 0);
+    transition: 300ms;
+}
+
+main .contents .main-contents article .top-boxes .compare a:hover {
+    color: rgb(255, 75, 75);
+    transition: 300ms;
+}
+
+
+@media (max-width: 768px) {
+    main .contents .main-contents article .top-boxes {
+        width: 100%;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    main .contents .main-contents article .top-boxes .compare {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/* Share buttons */
+
+main .contents .main-contents article .top-boxes #share-buttons {
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+}
+
+main .contents .main-contents article .top-boxes #share-buttons h6 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+}
+  
+main .contents .main-contents article .top-boxes #share-buttons .fa-share-nodes {
+    font-size: 30px;
+    color: rgb(73, 73, 73);
+    padding: 15px 20px;
+}
+
+main .contents .main-contents article .top-boxes #share-buttons .facebook i {
+    margin: 10px 5px 10px auto;
+    padding: 15px 20px;
+    font-size: 30px;
+    background-color: rgb(66, 103, 178);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: 500ms;
+}
+  
+main .contents .main-contents article .top-boxes #share-buttons .facebook i:hover {
+    background-color: rgb(255, 75, 75);
+    transition: 500ms;
+}
+  
+
+main .contents .main-contents article .top-boxes #share-buttons .twitter i {
+    margin: 10px 5px 10px auto;
+    padding: 15px 20px;
+    font-size: 30px;
+    background-color: rgb(0, 172, 238);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: 500ms;
+}
+  
+main .contents .main-contents article .top-boxes #share-buttons .twitter i:hover {
+    background-color: rgb(255, 75, 75);
+    transition: 500ms;
+}
+  
+ 
+main .contents .main-contents article .top-boxes #share-buttons .whatsapp i {
+    margin: 10px 5px 10px auto;
+    padding: 15px 20px;
+    font-size: 30px;
+    background-color: rgb(37, 211, 102);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: 500ms;
+}
+  
+main .contents .main-contents article .top-boxes #share-buttons .whatsapp i:hover {
+    background-color: rgb(255, 75, 75);
+    transition: 500ms;
+}
+  
+main .contents .main-contents article .top-boxes #share-buttons .sendemail i {
+    margin: 10px 0 10px auto;
+    padding: 15px 20px;
+    font-size: 30px;
+    background-color: rgb(73, 73, 73);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: 500ms;
+}
+  
+main .contents .main-contents article .top-boxes #share-buttons .sendemail i:hover {
+    background-color: rgb(255, 75, 75);
+    transition: 500ms;
+}
+  
+@media (max-width: 768px) {
+    main .contents .main-contents article .top-boxes #share-buttons {
+        width: 100%;
+    }
+    main .contents .main-contents article .top-boxes #share-buttons i {
+        margin-bottom: 10px;
+    }
+
+    main .contents .main-contents article .top-boxes #share-buttons .fa-share-nodes {
+        font-size: 22px;
+        padding: 10px 15px;
+    }
+
+    main .contents .main-contents article .top-boxes #share-buttons .facebook i {
+        padding: 15px 20px;
+        font-size: 22px;
+        border-radius: 10px;
+    }
+
+    main .contents .main-contents article .top-boxes #share-buttons .twitter i {
+        padding: 15px 20px;
+        font-size: 22px;
+        border-radius: 10px;
+    }
+
+    main .contents .main-contents article .top-boxes #share-buttons .whatsapp i {
+        padding: 15px 20px;
+        font-size: 22px;
+        border-radius: 10px;
+    }
+
+    main .contents .main-contents article .top-boxes #share-buttons .sendemail i {
+        padding: 15px 20px;
+        font-size: 22px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* Article */
+
+main .contents .main-contents article {
+    width: 100%;
+}
+
+main .contents .main-contents article h3 {
+    width: 100%;
+    font-size: 38px;
+    color: rgb(207, 40, 40);
+    padding: 10px 0 0 0;
+    margin: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+main .contents .main-contents article h4 {
+    width: 100%;
+    font-size: 32px;
+    color: rgb(207, 40, 40);
+    padding: 30px 0 10px 0;
+    margin: 0;
+
+}
+
+main .contents .main-contents article .details {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(83, 83, 83);
+}
+
+@media (max-width: 768px) {
+    main .contents .main-contents article h3 {
+        font-size: 32px;
+    }
+    
+    main .contents .main-contents article .details {
+        font-size: 16px;
+    }
+}
+
+main .contents .main-contents article .main-img {
+    width: 100%;
+    margin: 20px auto 30px auto;
+}
+
+main .contents .main-contents article .recipe {
+    width: 100%;
+    padding: 5px 0 15px 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+main .contents .main-contents article .recipe a {
+    color: rgb(207, 40, 40);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+main .contents .main-contents article .recipe a:hover {
+    color: rgb(149, 21, 21);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+main .contents .main-contents article .recipe strong {
+    font-weight: 900;
+}
+
+main .contents .main-contents article ul {
+    width: 100%;
+    padding: 0 15px 0 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main .contents .main-contents article ul li {
+    width: 100%;
+    padding: 0 10px 5px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(73, 73, 73);
+}
+
+main .contents .main-contents article ul strong {
+    font-weight: 900;
+}
+
+main .contents .main-contents article ul a {
+    color: rgb(207, 40, 40);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+main .contents .main-contents article ul a:hover {
+    color: rgb(149, 21, 21);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+main .contents .main-contents article img {
+    width: 100%;
+    margin: 20px auto 30px auto;
+}
+
+
+
+
+
+/* Stats */
+
+main .contents .main-contents article #receta .stats {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px;
+}
+
+main .contents .main-contents article #receta .stats .servings {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+main .contents .main-contents article #receta .stats .time {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 1366px) {
+    main .contents .main-contents article #receta .stats .servings {
+        width: 35%;
+    }
+    
+    main .contents .main-contents article #receta .stats .time {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1024px) {
+    main .contents .main-contents article #receta .stats .servings {
+        width: 40%;
+    }
+    
+    main .contents .main-contents article #receta .stats .time {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    main .contents .main-contents article #receta .stats {
+        gap: 10px;
+    }
+    main .contents .main-contents article #receta .stats .servings {
+        width: 45%;
+    }
+    
+    main .contents .main-contents article #receta .stats .time {
+        width: 45%;
+    }
+}
+
+
+main .contents .main-contents article #receta .stats i {
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    color: rgb(73, 73, 73);
+}
+
+main .contents .main-contents article #receta .stats .stat {
+    margin: 15px auto 5px auto;
+    width: 100%;
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+main .contents .main-contents article #receta .stats .qty {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    main .contents .main-contents article #receta .stats .stat {
+        font-size: 14px;
+    }
+    
+    main .contents .main-contents article #receta .stats .qty {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Ingredients list */
+
+main .contents .main-contents article #receta #ingredientes ul {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid rgb(239, 208, 208);
+    background-color: rgb(255, 248, 248);
+    list-style-position: inside;
+}
+
+main .contents .main-contents article #receta #ingredientes ul li {
+    border-bottom: 1px solid rgb(239, 208, 208);
+    padding: 10px 20px 10px 10px;
+}
+
+main .contents .main-contents article #receta #ingredientes ul li:last-child  {
+    border-bottom: 0;
+}
+
+
+
+
+/* Recipe steps */
+
+main .contents .main-contents article #receta #pasos ol {
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px 0 15px 0;
+    color: rgb(73, 73, 73);
+    list-style-position: inside;
+}
+
+main .contents .main-contents article #receta #pasos ol ::marker {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(237, 68, 68);
+}
+
+main .contents .main-contents article #receta #pasos ol li {
+    width: 100%;
+    padding: 0 15px 15px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(73, 73, 73);
+}
+
+main .contents .main-contents article #receta #pasos ol strong {
+    font-weight: 900;
+}
+
+
+
+
+
+
+/* Intro & Contents table */
+
+main .contents .main-contents article .intro {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0 15px;
+
+}
+
+main .contents .main-contents article .intro .intro-text {
+    width: 58%;
+}
+
+main .contents .main-contents article .intro .contents-table {
+    width: 38%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(239, 208, 208);
+    background-color: rgb(255, 248, 248);
+}
+
+main .contents .main-contents article .intro .contents-table h5 {
+    width: 100%;
+    font-size: 26px;
+    padding: 10px;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+main .contents .main-contents article .intro .contents-table ul {
+    width: 100%;
+    padding: 0 15px 0 30px;
+}
+
+main .contents .main-contents article .intro .contents-table ul li {
+    width: 100%;
+    padding: 0 10px 0 0;
+}
+
+
+main .contents .main-contents article .intro .contents-table a {
+    color: rgb(212, 38, 38);
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 300ms;
+}
+
+main .contents .main-contents article .intro .contents-table a:hover {
+    color: rgb(149, 21, 21);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+
+@media (max-width: 768px) {
+    main .contents .main-contents article .intro {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    main .contents .main-contents article .intro .intro-text {
+        width: 100%;
+    }
+    
+    main .contents .main-contents article .intro .contents-table {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+/* Important box */
+
+main .contents .main-contents article .important {
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(248, 85, 85);
+    padding: 5px;
+    margin: 15px auto 30px auto;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+@media (max-width: 1366px) {
+    main .contents .main-contents article .important {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    main .contents .main-contents article .important {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    main .contents .main-contents article .important {
+        width: 100%;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+}
+
+
+main .contents .main-contents article .important .icon {
+    width: 18%;
+    padding: 10px;
+}
+
+main .contents .main-contents article .important .icon i {
+    font-size: 60px;
+}
+
+
+main .contents .main-contents article .important .important-text {
+    width: 78%;
+    padding: 10px;
+}
+
+
+main .contents .main-contents article .important h5 {
+    margin: 0 auto 5px auto;
+    width: 100%;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+main .contents .main-contents article .important p {
+    margin: 5px auto 0 auto;
+    width: 100%;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    main .contents .main-contents article .important .important-text {
+        width: 100%;
+    }
+    main .contents .main-contents article .important h5 {
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* Suggested ingredients */
+
+main .contents .main-contents article .ingredientes-sug {
+    width: 100%;
+    padding: 5px;
+    margin: 20px auto 30px auto;
+}
+
+main .contents .main-contents article .ingredientes-sug p {
+    display: block;
+    margin: 5px auto 10px auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(73, 73, 73);
+}
+
+main .contents .main-contents article .ingredientes-sug ul {
+    list-style: none;
+    margin: 10px auto 10px auto;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+main .contents .main-contents article .ingredientes-sug ul li {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 4px 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(236, 56, 56);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(236, 56, 56);
+    transition: 300ms;
+}
+
+main .contents .main-contents article .ingredientes-sug ul li:hover {
+    color: rgb(236, 56, 56);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(245, 192, 192);
+    transition: 300ms;
+}
+
+
+
+
+
+/* Suggested posts */
+
+main .contents .main-contents .suggested {
+    width: 100%;
+    margin: 30px 0 20px 0;
+}
+
+main .contents .main-contents .suggested .section {
+    font-size: 32px;
+    color: rgb(207, 40, 40);
+    width: 100%;
+    margin: 0;
+}
+
+
+main .contents .main-contents .suggested .section-desc {
+    font-size: 18px;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+
+main .contents .main-contents .four-cards img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    transition: 500ms;
+    display: block;
+    position: relative;
+}
+
+main .contents .main-contents .four-cards img:hover {
+    opacity: 1;
+    transition: 500ms;
+}
+
+main .contents .main-contents .four-cards .four-card {
+    position: relative;
+}
+
+main .contents .main-contents .tag {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: default;
+}
+
+main .contents .main-contents .tag p {
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: right;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    display: block;
+
+    border-radius: 5px;
+    background-color: rgb(236, 56, 56);
+}
+
+
+main .contents .main-contents .four-cards .four-card .title {
+    text-transform: capitalize;
+    padding: 0 10px 0 10px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: rgb(212, 38, 38);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    transition: 500ms;
+}
+
+main .contents .main-contents .four-cards .four-card .title:hover {
+    color: rgb(149, 21, 21);
+    transition: 500ms;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+main .contents .main-contents .desc {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+main .contents .main-contents .read {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(236, 56, 56);
+    border: 2px solid rgb(236, 56, 56);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 500ms;
+}
+
+main .contents .main-contents .read:hover {
+    opacity: 0.8;
+    transition: 500ms;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(236, 56, 56);
+    color: rgb(236, 56, 56);
+}
+
+main .contents .main-contents .button-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+main .contents .main-contents .four-cards {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 50px 0;
+    margin-bottom: 70px;
+}
+
+main .contents .main-contents .four-cards .four-card {
+    width: 24%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    font-size: 18px;
+
+    
+}
+
+@media (max-width: 1366px) {
+    main .contents .main-contents .four-cards .four-card {
+        width: 49%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    main .contents .main-contents .tag p {
+        font-size: 12px;
+    }
+    main .contents .main-contents .four-cards img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 1024px) {
+    main .contents .main-contents .four-cards .four-card {
+        width: 49%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    main .contents .main-contents {
+        width: 100%;
+        flex-flow: column wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    main .contents .main-contents .four-cards {
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    main .contents .main-contents .four-cards .four-card {
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Social icons main */
+
+main .contents .main-contents .follow {
+    width: 100%;
+    margin: 20px auto 10px auto;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+main .contents .main-contents .follow h3 {
+    font-size: 34px;
+    text-align: center;
+    color:rgb(65, 65, 65);
+    margin: 0 auto 20px auto;
+}
+
+main .contents .main-contents .follow a {
+    color: rgb(245, 76, 76);
+    display: inline-block;
+    transition: 500ms;
+}
+
+main .contents .main-contents .follow a:hover {
+    color: rgb(220, 17, 17);
+    transition: 500ms;
+}
+
+main .contents .main-contents .follow i {
+    padding: 20px;
+    font-size: 40px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar */
+
+main .contents .sidebar {
+    order: 2;
+    width: 28%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    
+    gap: 50px;
+    margin-bottom: 50px;
+
+}
+
+@media (max-width: 1024px) {
+    main .contents .sidebar {
+        width: 100%;
+    }
+}
+
+main .contents .sidebar .paulina-ad {
+    width: 100%;
+}
+
+main .contents .sidebar .paulina-ad img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    text-align: center;
+    display: block;
+}
+
+
+main .contents .sidebar .title {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 100%;
+}
+
+
+main .contents .sidebar h5 {
+    font-family: 'Oranienbaum', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .contents .sidebar p {
+    font-size: 16px;
+}
+
+main .contents .sidebar p strong {
+    font-weight: 900;
+}
+
+
+
+
+/* CTA Freebies */
+
+main .contents .sidebar .recursos-gratis {
+    width: 100%;
+    text-align: center;
+}
+
+main .contents .sidebar .recursos-gratis .button-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+main .contents .sidebar .recursos-gratis .read {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(236, 56, 56);
+    border: 2px solid rgb(236, 56, 56);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 500ms;
+}
+
+main .contents .sidebar .recursos-gratis .read:hover {
+    opacity: 0.8;
+    transition: 500ms;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(236, 56, 56);
+    color: rgb(236, 56, 56);
+}
+
+
+
+
+
+/* Sidebar: Latest posts */
+
+main .contents .sidebar .latest {
+    width: 100%;
+}
+
+
+main .contents .sidebar .latest .latest-posts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 20px 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+main .contents .sidebar .latest .latest-posts .latest-photo {
+    order: 1;
+    width: 40%;
+}
+
+main .contents .sidebar .latest .latest-posts .latest-photo img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+main .contents .sidebar .latest .latest-posts .latest-info {
+    order: 2;
+    width: 60%;
+    padding-left: 10px;
+}
+
+main .contents .sidebar .latest .latest-posts .latest-info h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+main .contents .sidebar .latest .latest-posts .latest-info a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16px;
+    text-align: left;
+    color: rgb(236, 56, 56);
+    text-decoration: none;
+    margin: 0;
+}
+
+main .contents .sidebar .latest .latest-posts .latest-info a:hover {
+    color: rgb(255, 0, 0);
+    transition: 300ms;
+}
+
+main .contents .sidebar .latest .latest-posts .latest-info a:visited {
+    color: rgb(236, 56, 56);
+    transition: 300ms;
+}
+
+main .contents .sidebar .latest .latest-posts .latest-info a:active {
+    color: rgb(236, 56, 56);
+    transition: 300ms;
+}
+
+
+@media (max-width: 1024px) {
+    main .contents .sidebar .latest .latest-posts .latest-photo img {
+        max-height: 200px;
+    }
+    main .contents .sidebar .latest .latest-posts .latest-info h5 {
+        font-size: 22px;
+    }
+    
+    main .contents .sidebar .latest .latest-posts .latest-info a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    main .contents .sidebar .latest .latest-posts .latest-photo img {
+        max-height: 250px;
+    }
+}
+
+
+
+
+
+
+/* Sidebar: Social icons */
+
+main .contents .sidebar .social-links {
+    width: 100%;
+}
+
+main .contents .sidebar .social-links .social {
+    width: 100%;
+}
+
+main .contents .sidebar .social-links .social i {
+    font-size: 14px;
+    padding: 5px 10px 5px 0;
+    margin: 0;
+}
+
+main .contents .sidebar .social-links .social .youtube {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    border: 2px solid rgb(255, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    transition: 500ms;
+    margin-bottom: 15px;
+    
+}
+
+main .contents .sidebar .social-links .social .youtube:hover {
+    color:rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: 500ms;
+}
+
+main .contents .sidebar .social-links .social .instagram {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    background-color: rgb(247, 119, 55);
+    border-radius: 5px;
+    border: 2px solid rgb(247, 119, 55);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    transition: 500ms;
+    margin-bottom: 15px;
+}
+
+main .contents .sidebar .social-links .social .instagram:hover {
+    color:rgb(247, 119, 55);
+    background-color: rgb(255, 255, 255);
+    transition: 500ms;
+}
+
+main .contents .sidebar .social-links .social .facebook {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    background-color: rgb(66, 103, 178);
+    border-radius: 5px;
+    border: 2px solid rgb(66, 103, 178);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    transition: 500ms;
+    margin-bottom: 15px;
+}
+
+main .contents .sidebar .social-links .social .facebook:hover {
+    color:rgb(66, 103, 178);
+    background-color: rgb(255, 255, 255);
+    transition: 500ms;
+}
+
+main .contents .sidebar .social-links .social .tiktok {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    border: 2px solid rgb(48, 48, 48);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    transition: 500ms;
+    margin-bottom: 15px;
+}
+
+main .contents .sidebar .social-links .social .tiktok:hover {
+    color:rgb(48, 48, 48);
+    background-color: rgb(255, 255, 255);
+    transition: 500ms;
+}
+
+main .contents .sidebar .social-links .social .twitter {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    background-color: rgb(29, 161, 242);
+    border-radius: 5px;
+    border: 2px solid rgb(29, 161, 242);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    transition: 500ms;
+    margin-bottom: 15px;
+}
+
+main .contents .sidebar .social-links .social .twitter:hover {
+    color:rgb(29, 161, 242);
+    background-color: rgb(255, 255, 255);
+    transition: 500ms;
+}
+
+@media (max-width: 1024px) {
+    main .contents .sidebar .social-links .social .youtube {
+        width: 60%;
+    }
+    main .contents .sidebar .social-links .social .facebook {
+        width: 60%;
+    }
+    main .contents .sidebar .social-links .social .instagram {
+        width: 60%;
+    }
+    main .contents .sidebar .social-links .social .tiktok {
+        width: 60%;
+    }
+    main .contents .sidebar .social-links .social .twitter {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    main .contents .sidebar .social-links .social .youtube {
+        width: 100%;
+    }
+    main .contents .sidebar .social-links .social .facebook {
+        width: 100%;
+    }
+    main .contents .sidebar .social-links .social .instagram {
+        width: 100%;
+    }
+    main .contents .sidebar .social-links .social .tiktok {
+        width: 100%;
+    }
+    main .contents .sidebar .social-links .social .twitter {
+        width: 100%;
+    }
+}
+
+
+/* Sidebar YouTube widget */
+
+main .contents .sidebar .youtube-widget {
+    width: 100%;
+}
+
+main .contents .sidebar .youtube-widget p {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding: 0 0 0 5px;
+    width: 100%;
+}
+
+main .contents .sidebar .youtube-widget h6 {
+    margin: 0 auto 5px auto;
+    padding: 0;
+    width: 100%;
+}
+
+main .contents .sidebar .youtube-widget img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 3px solid rgb(245, 75, 75);
+    display: block;
+    margin: 15px auto 15px auto;
+}
+
+main .contents .sidebar .youtube-widget button {
+    background-color: rgb(255, 0, 0);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    border: 0;
+    padding: 7px 14px;
+    font-weight: 900;
+    display: block;
+    margin: 5px auto 10px auto;
+    font-family: 'Nunito', sans-serif;
+    transition: 300ms;
+}
+
+main .contents .sidebar .youtube-widget button:hover {
+    background-color: rgb(255, 59, 59);
+    transition: 300ms;
+}
+
+main .contents .sidebar .youtube-widget i {
+    padding: 0 10px 0 0;
+}
+
+main .contents .sidebar .youtube-widget a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar newsletter */
+
+main .contents .sidebar .newsletter {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    background-color: rgb(196, 55, 55);
+}
+
+main .contents .sidebar .newsletter .title {
+    color:rgba(255, 255, 255);
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: none;
+}
+
+main .contents .sidebar .newsletter p {
+    font-size: 16px;
+    margin-top: 30px;
+    color:rgba(255, 255, 255);
+}
+
+
+
+/* Sidebar: Tags */
+
+main .contents .sidebar .tags ul {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+main .contents .sidebar .tags ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(236, 56, 56);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(236, 56, 56);
+    transition: 300ms;
+}
+
+
+main .contents .sidebar .tags ul li:hover {
+    color: rgb(236, 56, 56);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(245, 192, 192);
+    transition: 300ms;
+}
+
+
+
+
+/* Sidebar: Disclaimer */
+
+main .contents .sidebar .disclaimer p {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(73, 73, 73);
+    font-family: 'Lato', sans-serif;
+}
+
+main .contents .sidebar .disclaimer a {
+    font-weight: 900;
+    color: rgb(236, 56, 56);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+main .contents .sidebar .disclaimer a:hover {
+    color: rgb(255, 0, 0);
+    transition: 300ms;
+}
+
+main .contents .sidebar .disclaimer a:visited {
+    color: rgb(236, 56, 56);
+    transition: 300ms;
+}
+
+main .contents .sidebar .disclaimer a:active {
+    color: rgb(236, 56, 56);
+    transition: 300ms;
+}
+
+main .contents .sidebar .disclaimer .portfolio {
+    text-align: center;
+    margin: 40px auto 10px auto;
+    width: 100%;
+}
+
+main .contents .sidebar .disclaimer i {
+    font-size: 50px;
+    padding: 10px;
+    display: inline;
+    color: rgb(73, 73, 73);
+    transition: 300ms;
+}
+
+main .contents .sidebar .disclaimer i:hover {
+    color: rgb(245, 54, 54);
+    transition: 300ms;
+}
+
+
+/* Footer */
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+footer .copyright {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    background-color: rgb(113, 113, 113);
+    color:rgb(255, 255, 255);
+}
+
+footer .copyright .privlinks {
+    order: 1;
+    width: 65%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+footer .copyright .privlinks ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer .copyright .privlinks ul li {
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+footer .copyright .privlinks ul li a {
+    text-decoration: none;
+    margin: 0;
+    color:rgb(255, 255, 255);
+    transition: 300ms;
+}
+
+footer .copyright .privlinks ul li a:hover {
+    color:rgb(255, 255, 255);
+    transition: 300ms;
+}
+
+footer .copyright .eleonora {
+    order: 2;
+    width: 30%;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+footer .copyright .eleonora p {
+    font-size: 12px;
+    padding: 20px 20px 0 0;
+    letter-spacing: 1px;
+    color:rgb(255, 255, 255);
+}
+
+@media (max-width: 1366px) {
+    footer .copyright {
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    footer .copyright .privlinks {
+        width: 100%;
+        text-align: center;
+    }
+    footer .copyright .privlinks ul {
+        padding: 0;
+    }
+    footer .copyright .privlinks ul li {
+        padding: 10px;
+    }
+    footer .copyright .eleonora {
+        width: 100%;
+        text-align: center;
+    }
+    footer .copyright .eleonora p {
+        padding: 10px 0 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Print */
+
+main .contents .main-contents article .print {
+    margin: 10px auto 15px auto;
+    text-align: center;
+    width: 100%;
+}
+
+
+main .contents .main-contents article .print button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(236, 56, 56);
+    border: 2px solid rgb(236, 56, 56);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 500ms;
+}
+
+main .contents .main-contents article .print button:hover {
+    opacity: 0.8;
+    transition: 500ms;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(236, 56, 56);
+    color: rgb(236, 56, 56);
+}
+
+@media print {
+    main .contents .main-contents article #receta {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    main .contents .main-contents article {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    main .contents .main-contents article .top-boxes {
+        margin-bottom: 0;
+    }
+    main .contents .main-contents article .top-boxes .compare {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        border: 0;
+    }
+    main .contents .main-contents article .top-boxes .compare a {
+        text-decoration: none;
+    }
+    main .contents .main-contents article #receta #ingredientes ul {
+        border: 0;
+        padding: 0;
+    }
+    
+    main .contents .main-contents article #receta #ingredientes ul li {
+        border-bottom: 0;
+        padding: 5px 10px 5px 10px;
+    }
+
+    img {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    main .contents .breads {
+        display: none;
+    }
+    main .contents .main-contents article #share-buttons {
+        display: none;
+    }
+
+    main .contents .main-contents article #donde {
+        display: none;
+    }
+    main .contents .main-contents article #acerca {
+        display: none;
+    }
+    main .contents .main-contents article #combinaciones {
+        display: none;
+    }
+    main .contents .main-contents article #opciones {
+        display: none;
+    }
+    main .contents .main-contents article .intro-text {
+        display: none;
+    }
+    main .contents .main-contents article .contents-table {
+        display: none;
+    }
+    main .contents .main-contents article h3 {
+        display: none;
+    }
+    main .contents .main-contents article .details {
+        display: none;
+    }
+    main .contents .main-contents article .ingredientes-sug {
+        display: none;
+    }
+
+    main .contents .main-contents .follow {
+        display: none;
+    }
+
+    main .contents .main-contents .suggested {
+        display: none;
+    }
+
+    main .contents .sidebar {
+        display: none;
+    }
+    main .contents .main-contents article .print {
+        display: none;
+    }
+}
